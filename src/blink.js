@@ -26,7 +26,7 @@ class Blink extends Component {
   }
 
   render() {
-    const { className, text } = this.props;
+    const { className, children, text } = this.props;
     const style = {
       visibility: this.state.isVisible ? 'visible' : 'hidden',
     };
@@ -53,7 +53,7 @@ class Blink extends Component {
 Blink.propTypes = {
   rate: PropTypes.number,
   className: PropTypes.string,
-  children: PropTypes.string,
+  children: PropTypes.node,
 };
 
 Blink.defaultProps = {
