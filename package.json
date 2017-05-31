@@ -13,7 +13,8 @@
   "scripts": {
     "build": "NODE_ENV=production webpack --config webpack.config.js",
     "prepublish": "yarn build",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "peerDependencies": {
     "prop-types": "^15.5.10",
@@ -29,6 +30,10 @@
     "babel-preset-stage-0": "^6.24.1",
     "enzyme": "^2.8.2",
     "jest": "^20.0.4",
+    "react": "^15.5.4",
+    "react-addons-test-utils": "^15.5.1",
+    "react-dom": "^15.5.4",
+    "react-test-renderer": "^15.5.4",
     "webpack": "^2.6.0"
   }
 }
