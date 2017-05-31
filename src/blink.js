@@ -1,28 +1,24 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import ReactDOM from 'react-dom';
 
 class Blink extends Component {
   constructor(props) {
     super(props);
-  }
-
-  getInitialState() {
-    return {
+    this.state = {
       isVisible: true,
     };
   }
 
   componentDidMount() {
-    this._animate();
+    this.animate();
   }
 
   componentDidUpdate() {
-    this._animate();
+    this.animate();
   }
 
   componentWillUnmount() {
-    clearInterval(this._blinkTimer);
+    clearInterval(this.blinkTimer);
   }
 
   render() {
@@ -38,11 +34,12 @@ class Blink extends Component {
     );
   }
 
-  _animate() {
-    clearInterval(this._blinkTimer);
+  animate() {
+    clearInterval(this.blinkTimer);
+
     const { rate } = this.props;
 
-    this._blinkTimer = setInterval(() => {
+    this.blinkTimer = setInterval(() => {
       this.setState({
         isVisible: !this.state.isVisible,
       });
