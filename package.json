@@ -11,8 +11,12 @@
     "component"
   ],
   "scripts": {
-    "build": "NODE_ENV=production webpack --config webpack.config.js",
+    "build": "babel -s inline --ignore \"**/test\" --source-root src/ -d lib src/",
+    "build:clean": "rimraf ./lib",
+    "prebuild": "yarn build:clean",
     "prepublish": "yarn build",
+    "setup": "yarn install",
+    "postsetup": "yarn build",
     "test": "jest",
     "test:watch": "jest --watch"
   },
@@ -34,6 +38,6 @@
     "react-addons-test-utils": "^15.5.1",
     "react-dom": "^15.5.4",
     "react-test-renderer": "^15.5.4",
-    "webpack": "^2.6.0"
+    "rimraf": "^2.6.1"
   }
 }
