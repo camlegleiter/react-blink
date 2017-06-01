@@ -57,4 +57,14 @@ describe('<Blink />', () => {
       expect(component.find('span').prop('style')).toEqual({ visibility: 'visible' });
     });
   });
+
+  describe('unmounting the Blink component', () => {
+    it('stops animating', () => {
+      const timer = component.blinkTimer;
+
+      component.unmount();
+
+      expect(clearInterval.mock.calls[0][0]).toEqual(timer);
+    });
+  });
 });
