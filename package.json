@@ -1,5 +1,5 @@
 {
-  "name": "react-blink",
+  "name": "@camlegleiter/react-blink",
   "version": "0.0.1",
   "description": "Bringing back the classic <blink> tag",
   "main": "lib/index.js",

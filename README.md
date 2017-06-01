@@ -1,17 +1,17 @@
-# react-blink
+# @camlegleiter/react-blink
 Bringing back the classic &lt;blink&gt; tag to React!
 
 ## Installation
 
 ```
-$ yarn add react-blink
+$ yarn add @camlegleiter/react-blink
 ```
 
 ## Usage
 
 ```javascript
 import ReactDOM from 'react-dom';
-import Blink from 'react-blink';
+import Blink from '@camlegleiter/react-blink';
 
 ReactDOM.render(
   <Blink rate={1000}>This text is blinking!</Blink>,
