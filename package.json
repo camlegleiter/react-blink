@@ -4,6 +4,7 @@
   "description": "Bringing back the classic <blink> tag",
   "main": "lib/index.js",
   "author": "Cameron Legleiter <camlegleiter@gmail.com>",
+  "repository": "git@github.com:camlegleiter/react-blink",
   "license": "MIT",
   "keywords": [
     "react",
@@ -27,8 +28,8 @@
     "react-dom": "^15.5.4"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-jest": "^20.0.3",
+    "@babel/cli": "^7.5.0",
+    "babel-jest": "^24.8.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
@@ -38,7 +39,7 @@
     "eslint-plugin-import": "^2.3.0",
     "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-react": "^7.0.1",
-    "jest": "^20.0.4",
+    "jest": "^24.8.0",
     "react-addons-test-utils": "^15.5.1",
     "react-test-renderer": "^15.5.4",
     "rimraf": "^2.6.1"
