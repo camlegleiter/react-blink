@@ -24,8 +24,8 @@
   },
   "dependencies": {
     "prop-types": "^15.5.10",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.0",
@@ -41,7 +41,7 @@
     "eslint-plugin-react": "^7.0.1",
     "jest": "^24.8.0",
     "react-addons-test-utils": "^15.5.1",
-    "react-test-renderer": "^15.5.4",
+    "react-test-renderer": "^18.2.0",
     "rimraf": "^2.6.1"
   }
 }
